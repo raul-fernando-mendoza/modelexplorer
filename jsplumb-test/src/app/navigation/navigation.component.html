@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+  <button
+    type="button"
+    aria-label="Toggle sidenav"
+    mat-icon-button
+    (click)="drawer.toggle()"
+  >
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button>
+  <span>jsplumb-test</span>
+</mat-toolbar>
+<mat-drawer-container class="sidenav-container" hasBackdrop="false">
+  <mat-drawer #drawer class="sidenav" 
+      role="navigation"
+      mode="push"
+      >
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="home">home</a>
+      <a mat-list-item href="test">test</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

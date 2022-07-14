@@ -1,0 +1,12 @@
+
+    <div class="control" [id]="table.tableName" #node>{{ table.tableName }}
+        <div *ngFor="let filter of table.filters">
+        {{ filter.field }} {{ filter.operator}} {{ filter.value }} 
+        </div>
+    </div>   
+    <div class="joins"  *ngFor="let join of table.joins">
+        <app-table-recursive [table]="join" [parent]="table.tableName"></app-table-recursive>
+    </div>
+   
+  
+   

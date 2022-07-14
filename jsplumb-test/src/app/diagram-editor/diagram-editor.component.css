@@ -1,0 +1,26 @@
+.diagramContainer {
+    display: flex;
+  }
+
+.l{
+  width:500px;
+  border-width: 2px;
+  border-color: red;
+  border:solid;
+
+}
+.r{
+  width:500px;
+  border-width: 2px;
+  border-color: blue;
+  border:solid;
+
+}
+
+#diagram, #toolbox {
+  margin: 20px 0;
+  border-width: 2px;
+  border-style: solid;
+  border-color: lightgrey;
+  height: 90vh;
+}
